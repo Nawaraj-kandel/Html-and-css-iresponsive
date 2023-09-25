@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top:0px;
+    left: 0px;
+}
+#logo{
+ margin:3px 5px;
+ padding:4px 5px;
+ cursor: pointer;  
+}
+/* logo image */
+img{
+    height: 71px;
+    width: 78px;
+}
+/* list styling */
+ #navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+/* color: white; */
+list-style: none;
+font-size: 1.5 rem;
+}
+#navbar ul li a{
+ display: block;
+ padding: 3px 20px;
+ border-radius: 10px;
+ text-decoration: none;
+ color: white;
+ cursor: pointer;
+    }
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+        font-weight: bold;
+    }
+
+
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#home::before{
+    content: "";
+    background:url(background.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8rem;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+color: white;
+text-align: center; 
+font-family: 'Roboto', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+    
+
+/* services section */
+#services{
+    margin: 0px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 5px 8px;
+    padding: 20px;
+    border-radius: 23px;
+    background-color: aliceblue;
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 232px;
+}
+
+
+
+
+/* utility class */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(155, 189, 52);
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.search{
+    display: block;
+    position: absolute;
+    right: 50px;
+    margin-top: 0px;
+    border-radius: 1rem;
+}
